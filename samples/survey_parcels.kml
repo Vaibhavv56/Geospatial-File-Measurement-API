@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Survey Parcels and Infrastructure</name>
+    <description>Realistic survey dataset containing agricultural parcels, roadways, and control points in Bengaluru, India (EPSG:4326).</description>
+    
+    <!-- Parcel Alpha: Polygon -->
+    <Placemark>
+      <name>Parcel Alpha</name>
+      <description>Commercial Development Zone A</description>
+      <ExtendedData>
+        <Data name="survey_no"><value>SY-104/1</value></Data>
+        <Data name="zoning"><value>Commercial</value></Data>
+        <Data name="owner"><value>Karnataka Industrial Corp</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5900,12.9700,0 77.5950,12.9700,0 77.5950,12.9750,0 77.5900,12.9750,0 77.5900,12.9700,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Parcel Beta: Polygon with Hole (Courtyard) -->
+    <Placemark>
+      <name>Parcel Beta</name>
+      <description>Residential Estate B</description>
+      <ExtendedData>
+        <Data name="survey_no"><value>SY-105/2</value></Data>
+        <Data name="zoning"><value>Residential High-Density</value></Data>
+        <Data name="owner"><value>Greenfield Estates Ltd</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5960,12.9700,0 77.6020,12.9700,0 77.6020,12.9740,0 77.5960,12.9740,0 77.5960,12.9700,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+        <innerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5980,12.9710,0 77.6000,12.9710,0 77.6000,12.9730,0 77.5980,12.9730,0 77.5980,12.9710,0
+            </coordinates>
+          </LinearRing>
+        </innerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Arterial Road: LineString -->
+    <Placemark>
+      <name>Main Spine Road</name>
+      <description>4-lane divided collector boulevard</description>
+      <ExtendedData>
+        <Data name="road_class"><value>Arterial</value></Data>
+        <Data name="surface"><value>Asphalt</value></Data>
+        <Data name="lanes"><value>4</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5880,12.9690,920 77.5930,12.9715,922 77.5980,12.9730,925 77.6040,12.9760,928
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Drainage Canal: LineString -->
+    <Placemark>
+      <name>Stormwater Drainage Canal</name>
+      <description>Reinforced concrete stormwater channel</description>
+      <ExtendedData>
+        <Data name="type"><value>Open Canal</value></Data>
+        <Data name="width_m"><value>3.5</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5900,12.9760,918 77.5960,12.9755,916 77.6010,12.9750,914
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Survey Monument: Point -->
+    <Placemark>
+      <name>GCP Monument #42</name>
+      <description>Permanent Geodetic Ground Control Point</description>
+      <ExtendedData>
+        <Data name="elevation_m"><value>924.5</value></Data>
+        <Data name="order"><value>First Order Benchmark</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>77.5925,12.9725,924.5</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Borewell: Point -->
+    <Placemark>
+      <name>Monitoring Borewell #07</name>
+      <description>Subsurface hydrological sensor station</description>
+      <ExtendedData>
+        <Data name="depth_m"><value>180.0</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>77.5975,12.9715,920.0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

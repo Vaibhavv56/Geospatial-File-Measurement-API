@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Regional Highway Corridors</name>
+    <Placemark>
+      <name>Outer Ring Road Expressway - Section 1</name>
+      <LineString>
+        <coordinates>
+          77.600,12.900,900 77.620,12.915,905 77.640,12.935,910 77.660,12.960,915
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Industrial Link Road - Section 2</name>
+      <LineString>
+        <coordinates>
+          77.620,12.915,905 77.610,12.930,908 77.600,12.945,912
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
